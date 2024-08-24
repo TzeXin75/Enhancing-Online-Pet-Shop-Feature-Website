@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | XinHome Pet Shop</title>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo2.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="food&accessories.html">Food & Accessories</a></li>
+                <li><a href="service.php">Service</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                <li ><a class="active" href="login.html"><i class="fa fa-user"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="hero_background">
+        <div class="form-box">
+            <form method="POST" action="login.php">
+                <div class="login-container" id="login">
+                    <div class="top">
+                        <span>Don't have an account? <a href="#register" onclick="showRegister()">Sign Up</a></span>
+                        <header>Login</header>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" name="username" placeholder="Username" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" name="password" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" name="login" value="Sign In">
+                    </div>
+                </div>
+            </form>
+
+            <form method="POST" action="register.php">
+                <div class="register-container" id="register">
+                    <div class="top">
+                        <span>Have an account? <a href="#login" onclick="showLogin()">Login</a></span>
+                        <header>Sign Up</header>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" name="username" placeholder="Username" required>
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input-field" name="email" placeholder="Email" required>
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" name="address" placeholder="Address" required>
+                        <i class="bx bx-map"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" name="phoneNumber" placeholder="Phone Number" required>
+                        <i class="bx bx-phone"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" name="password" placeholder="Password" required>
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" name="register" value="Register">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo2.png" class="logo" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address</strong></p>
+            <p><strong>Phone</strong></p>
+            <p><strong>Hours</strong></p>
+        </div>
+
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
